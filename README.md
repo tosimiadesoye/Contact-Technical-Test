@@ -2,7 +2,7 @@
 
 To clone the project
 
-## `https://github.com/tosimiadesoye/Contact-Technical-Test`
+## `git clone https://github.com/tosimiadesoye/Contact-Technical-Test`
 
 and then install node dependencies 
 
