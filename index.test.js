@@ -10,7 +10,7 @@ describe("Function that filter's by location", () => {
   test("Check that it is case insensitive ", () => {
     expect(filterByLocation(models, "SPRINGFIELD")).toMatch(expected);
   });
-  test("Expect output to be defined", () => {
+  test("Ensure output is defined", () => {
     expect(filterByLocation(models, "Springfield")).toBeDefined();
   });
 
@@ -18,7 +18,7 @@ describe("Function that filter's by location", () => {
     expect(filterByLocation(models, "Philidelphia")).not.toEqual(expected);
   });
 
-  test("Expects output not to be 'Diane Nguyen and Frank Reynolds'", () => {
+  test("Expect output not to be 'Diane Nguyen and Frank Reynolds'", () => {
     expect(filterByLocation(models, "Springfield")).not.toBe(unexpectedOutput);
   });
 });
