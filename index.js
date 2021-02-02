@@ -1,3 +1,4 @@
+const models = require('./model.json')
 const filterByLocation = (array, location) => {
   //Make input case insensitive
   const regex = new RegExp(location, "i");
@@ -7,7 +8,9 @@ const filterByLocation = (array, location) => {
       expectedNames.push(array[i].name);
     }
   }
-  //Convert the array to a string and replace the comma with a new line
+  //Convert the array of expected names to a string and replace the comma with a new line
   return expectedNames.join().replace(",", "\n");
 };
+
+console.log(filterByLocation(models, "Springfield"))
 module.exports = filterByLocation;
