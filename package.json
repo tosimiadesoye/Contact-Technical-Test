@@ -1,0 +1,17 @@
+{
+  "name": "contact-technical-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "create.test.js",
+  "jest": {
+    "verbose": true
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Tosimi",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
